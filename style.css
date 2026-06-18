@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: #0360D9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color:#CCD5F3;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #0360D9;
+}
+
+.header-botao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao-login {
+    text-decoration: none;
+    color: #0360D9;
+    font-weight: bold;
+}
+
+.botao-signup {
+    text-decoration: none;
+    background-color: #0360D9;
+    color: #FFFFFF;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.botao-signup:hover {
+    background-color: #024bb1;
+}
+
+.section-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background: linear-gradient(180deg, #CCD5F3 0%, #FFFFFF 100%);
+}
+
+.conteudo-inicial {
+    flex: 1;
+    max-width: 550px;
+}
+
+.conteudo-inicial h1 {
+    font-size: 48px;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.conteudo-inicial p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.form-pesquisa {
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    padding: 10px 14px 10px 30px;
+    border-radius: 60px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+}
+
+.form-pesquisa form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    position: relative;
+}
+
+.icone-input {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: opacity(0.7); 
+}
+
+.formulario select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    padding: 10px 25px 10px 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.botao-pesquisar {
+    background-color: #0360D9;
+    border: none;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    flex-shrink: 0;
+}
+
+.botao-pesquisar img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.botao-pesquisar:hover {
+    background-color: #024bb1;
+    transform: scale(1.03);
+}
+
+.img-medico {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-medico img {
+    height: 550px;
+    width: 500px;
+    object-fit: cover;
+}

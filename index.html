@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="header">
+   <header class="header">
         <div class="logo">E-<span>sheba</span></div>
         <nav class="nav">
             <a href="#home">Home</a>
@@ -19,15 +19,15 @@
             <a href="#application">Application</a>
             <a href="#history">History</a>
         </nav>
-        <div class="header-auth">
+        <div class="header-botao">
             <a href="#botaologin" class="botao-login">Login</a>
             <a href="#botaosignup" class="botao-signup">Sign up</a>
         </div>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
+        <section class="section-inicial">
+            <div class="conteudo-inicial">
                 <h1>Find & Search Your <span>Favourite</span> Doctor</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</p>
                 <p>Sem velit viverra amet faucibus.</p>
@@ -36,7 +36,54 @@
 
                 <section class="consulting-section">
                     <div>
-                        <h2><span>Our Consulting Especialists</span></h2>
+            <div class="form-pesquisa">
+    <form>
+        <div class="formulario">
+            <img src="https://img.icons8.com/ios-glyphs/30/user-male-circle.png" class="icone-input" alt="Usuário">
+            <select name="doctor-name">
+                <option value="" disabled selected>Doctor's Name</option>
+                <option value="pediatrician">Pediatrician</option>
+                <option value="cardiologist">Cardiologist</option>
+            </select>
+        </div>
+        
+        <div class="formulario">
+            <img src="https://img.icons8.com/ios-glyphs/30/marker.png" class="icone-input" alt="Localização">
+            <select name="location">
+                <option value="" disabled selected>Location</option>
+                <option value="new-york">New York</option>
+                <option value="london">London</option>
+            </select>
+        </div>
+        
+        <button class="botao-pesquisar">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png" alt="Pesquisar">
+        </button>
+    </form>
+</div>
+        </div>
+        <div class="img-medico">
+            <img src="/assets/doctor.png" alt="Médico">
+        </div>
+    </section>
+
+    <div class="faixa-estatisticas">
+    <div class="item-estatistica">
+        <h3>24/7</h3>
+        <p>Online Support</p>
+    </div>
+    
+    <div class="item-estatistica divisor">
+        <h3>100+</h3>
+        <p>Doctors</p>
+    </div>
+    
+    <div class="item-estatistica">
+        <h3>1M+</h3>
+        <p>Active Patients</p>
+    </div>
+</div>
+            <h2><span>Our Consulting Especialists</span></h2>
 
                         <article>
                             <img src="/assets/virus.png" alt="Vírus">
