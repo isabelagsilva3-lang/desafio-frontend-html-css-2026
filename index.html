@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Desafio 01</title>
-    
 </head>
-
 <body>
 
-   <header class="header">
+    <header class="header">
         <div class="logo">E-<span>sheba</span></div>
         <nav class="botoes-navegacao">
             <a href="#home">Home</a>
@@ -19,150 +17,155 @@
             <a href="#history">History</a>
         </nav>
         <div class="botoes-login-signup">
-            <a href="#botaologin" class="botao-login">Login</a>
+            <a href="#botaologin" class="botao-login">Login in</a>
             <a href="#botaosignup" class="botao-signup">Sign up</a>
         </div>
     </header>
 
     <main>
-        <section class="section-inicial">
+        <section class="section-inicial" id="home">
             <div class="conteudo-inicial">
                 <h1>Find & Search Your <span>Favourite</span> Doctor</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</p>
                 <p>Sem velit viverra amet faucibus.</p>
 
-                <section class="consulting-section">
-                    <div>
-            <div class="form-pesquisa">
-    <form>
-        <div class="formulario">
-            <img src="https://img.icons8.com/ios-glyphs/30/user-male-circle.png" class="icone-input" alt="Nome do Médico">
-            <select name="doctor-name">
-                <option value="" disabled selected>Doctor's Name</option>
-                <option value="pediatrician">Pediatrician</option>
-                <option value="cardiologist">Cardiologist</option>
-            </select>
-        </div>
-        
-        <div class="formulario">
-            <img src="https://img.icons8.com/ios-glyphs/30/marker.png" class="icone-input" alt="Localização">
-            <select name="location">
-                <option value="" disabled selected>Location</option>
-                <option value="new-york">New York</option>
-                <option value="london">London</option>
-            </select>
-        </div>
-        
-        <button class="botao-pesquisar">
-            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png" alt="Pesquisar">
-        </button>
-    </form>
-</div>
-        </div>
-        <div class="img-medico">
-            <img src="assets/doctor.png" alt="Médico">
-        </div>
-    </section>
+                <div class="form-pesquisa">
+                    <form>
+                        <div class="formulario">
+                            <img src="https://img.icons8.com/ios-glyphs/30/user-male-circle.png" class="icone-input" alt="Nome do Médico">
+                            <select name="doctor-name">
+                                <option value="" disabled selected>Doctor's Name</option>
+                                <option value="pediatrician">Pediatrician</option>
+                                <option value="cardiologist">Cardiologist</option>
+                            </select>
+                        </div>
+                        
+                        <div class="formulario">
+                            <img src="https://img.icons8.com/ios-glyphs/30/marker.png" class="icone-input" alt="Localização">
+                            <select name="location">
+                                <option value="" disabled selected>Location</option>
+                                <option value="new-york">New York</option>
+                                <option value="london">London</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="botao-pesquisar">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png" alt="Pesquisar">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="img-medico">
+                <img src="assets/doctor.png" alt="Médico">
+            </div>
+        </section>
 
-    <div class="faixa-estatisticas">
-    <div class="item-estatistica">
-        <h3>24/7</h3>
-        <p>Online Support</p>
-    </div>
-    
-    <div class="item-estatistica divisor">
-        <h3>100+</h3>
-        <p>Doctors</p>
-    </div>
-    
-    <div class="item-estatistica">
-        <h3>1M+</h3>
-        <p>Active Patients</p>
-    </div>
-</div>
+        <div class="faixa-estatisticas">
+            <div class="item-estatistica">
+                <h3>24/7</h3>
+                <p>Online Support</p>
+            </div>
+            
+            <div class="item-estatistica divisor">
+                <h3>100+</h3>
+                <p>Doctors</p>
+            </div>
+            
+            <div class="item-estatistica">
+                <h3>1M+</h3>
+                <p>Active Patients</p>
+            </div>
+        </div>
+
+        <section class="consulting-section" id="about">
             <h2><span>Our Consulting Especialists</span></h2>
 
-                        <article>
-                            <img src="assets/virus.png" alt="Vírus">
-                            <h3>Covid-19 Test</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
-                        </article>
+            <div class="container-cards">
+                <article>
+                    <img src="assets/virus.png" alt="Vírus">
+                    <h3>Covid-19 Test</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
+                </article>
 
-                        <article>
-                            <img src="assets/lungs.png" alt="Pulmões">
-                            <h3><span>Heart Lungs</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
-                        </article>
+                <article>
+                    <img src="assets/lungs.png" alt="Pulmões">
+                    <h3><span>Heart Lungs</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
+                </article>
 
-                        <article>
-                            <img src="assets/suppliment.png" alt="Suplementos">
-                            <h3><span>Suppliment</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
-                        </article>
+                <article>
+                    <img src="assets/suppliment.png" alt="Suplementos">
+                    <h3><span>Suppliment</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
+                </article>
 
-                        <article>
-                            <img src="assets/mental-health.png" alt="Cabeça com coração">
-                            <h3><span>Mental Health</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
-                        </article>
-                    </div>
+                <article>
+                    <img src="assets/mental-health.png" alt="Cabeça com coração">
+                    <h3><span>Mental Health</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipsicing. Sem velit viverra amet faucibus.</p>
+                </article>
+            </div>
+        </section>
 
+        <section class="why-choose-us" id="application">
+            <div class="img-cirurgiao">
+                <img src="assets/surgeon.png" alt="Cirurgião">
+            </div>
+
+            <div class="conteudo-choose">
+                <h2><span>Why You Choose Us?</span></h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
+                </ul>
+                <a href="#learnmore" class="learn-more">Learn More <img src="assets/arrow-blue.png" alt="Seta"></a>
+            </div>
+        </section>
+
+        <section class="appointment-section" id="history">
+            <div class="depoimentos-esquerda">
+                <h2>What <span>Our Membrer's</span> Saying About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</p>
+                <p>Sem velit viverra amet faucibus.</p>
+                <div class="grupo-reviews">
+                    <img src="assets/people-icon.png" alt="Pessoas"> 
+                    <p><strong>100+ Reviews</strong></p>
+                </div>
+            </div>
+
+            <div class="card-depoimento">
+                <div class="topo-depoimento">
+                    <img src="assets/person-icon.png" alt="Mulher">
                     <div>
-                        <img src="assets/surgeon.png" alt="Cirurgião">
-
-                        <h2><span>Why You Choose Us?</span></h2>
-
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</li>
-                        </ul>
-
-                        <a href="#learnmore" class="learn-more">Learn More</a> <img src="assets/arrow-blue.png" alt="Seta"></a>
-                    </div>
-
-                </section>
-
-                <section class="appointment-section">
-                    <div>
-                        <h2>What <span>Our Membrer's</span> Saying About Us</h2>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. </p>
-                            <p>Sem velit viverra amet faucibus.</p>
-
-                        <img src="assets/people-icon.png" alt="Pessoas" > <p><strong>100+ Reviews</strong></p>
-                            
-                    </div>
-
-                    <div>
-                        <img src="assets/person-icon.png" alt="Mulher">
-
                         <p><strong>Jane Cooper</strong></p>
                         <p>12/04/17</p>
-
-                        <img src="assets/filled-star.png" alt="Estrela preenchida">
-                        <img src="assets/filled-star.png" alt="Estrela preenchida">
-                        <img src="assets/filled-star.png" alt="Estrela preenchida">
-                        <img src="assets/filled-star.png" alt="Estrela preenchida">
-                        <img src="assets/empty-star.png" alt="Estrela vazia">
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet faucibus.
-                            Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet
-                            faucibus.Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet
-                            faucibus.</p>
                     </div>
-                </section>
+                </div>
+                <div class="estrelas">
+                    <img src="assets/filled-star.png" alt="Estrela preenchida">
+                    <img src="assets/filled-star.png" alt="Estrela preenchida">
+                    <img src="assets/filled-star.png" alt="Estrela preenchida">
+                    <img src="assets/filled-star.png" alt="Estrela preenchida">
+                    <img src="assets/empty-star.png" alt="Estrela vazia">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet faucibus. Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet faucibus.Lorem ipsum dolor sit amet, consectetur adipsicing elit. Sem velit viverra amet faucibus.</p>
+            </div>
+        </section>
 
-<section class="quality-health">
-    <h1>The Future of <span> Quality Health </span></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p> 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. sed. Nibh est sit lobortis id semper. </p>
-    <a href="#learnmore" class="learn-more">Learn More</a> <img src="assets/arrow-blue.png" alt="Seta"></a>
+        <section class="quality-health">
+            <div class="conteudo-qualidade">
+                <h1>The Future of <span> Quality Health </span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed. Nibh est sit lobortis id semper.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. sed. Nibh est sit lobortis id semper.</p>
+                <a href="#learnmore" class="learn-more">Learn More <img src="assets/arrow-blue.png" alt="Seta"></a>
+            </div>
 
-<div class="imagem-qualidade">
+            <div class="imagem-qualidade">
                 <img src="assets/doctor-pacient.png" alt="Médico e paciente">
             </div>
         </section>
@@ -212,5 +215,4 @@
     </footer>
 
 </body>
-
 </html>
