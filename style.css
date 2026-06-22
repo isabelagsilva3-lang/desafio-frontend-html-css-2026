@@ -67,6 +67,9 @@ img {
     text-decoration: none;
     color: #0360D9;
     font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 22px;
+    border: 2px solid #0360D9;
 }
 
 .botao-signup {
@@ -89,6 +92,7 @@ img {
     justify-content: space-between;
     padding: 60px 8%;
     background: linear-gradient(180deg, #CCD5F3 0%, #FFFFFF 100%);
+    gap: 40px;
 }
 
 .conteudo-inicial {
@@ -191,26 +195,47 @@ img {
     object-fit: cover;
 }
 
-.consulting-section {
+.faixa-estatisticas {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 60px 8%;
+    background-color: #0360D9;
+    color: #FFFFFF;
+    padding: 40px 8%;
+    text-align: center;
 }
 
-.consulting-section > div:first-child {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    flex: 1;
+.item-estatistica h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.item-estatistica p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.item-estatistica.divisor {
+    border-left: 2px solid #ffffff4d;
+    border-right: 2px solid #ffffff4d;
+    padding: 0 60px;
+}
+
+.consulting-section {
+    padding: 80px 8%;
+    text-align: center;
 }
 
 .consulting-section h2 {
-    grid-column: 1 / -1;
     font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .consulting-section article {
@@ -254,49 +279,40 @@ img {
     color: #E2E8F0;
 }
 
-.faixa-estatisticas {
+.why-choose-us {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: #0360D9;
-    color: #FFFFFF;
-    padding: 40px 8%;
-    text-align: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 60px;
 }
 
-.item-estatistica h3 {
-    font-size: 40px;
-    margin-bottom: 5px;
+.img-cirurgiao {
+    flex: 1;
 }
 
-.item-estatistica p {
-    font-size: 16px;
-    opacity: 0.9;
+.img-cirurgiao img {
+    border-radius: 24px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.item-estatistica.divisor {
-    border-left: 2px solid #ffffff4d;
-    border-right: 2px solid #ffffff4d;
-    padding: 0 60px;
-}
-
-.consulting-section > div:last-child {
+.conteudo-choose {
     flex: 1;
     max-width: 550px;
 }
 
-.consulting-section > div:last-child h2 {
-    text-align: left;
+.conteudo-choose h2 {
     font-size: 36px;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
 
-.consulting-section ul {
+.conteudo-choose ul {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.consulting-section ul li {
+.conteudo-choose ul li {
     margin-bottom: 15px;
     position: relative;
     padding-left: 30px;
@@ -305,7 +321,7 @@ img {
     text-align: left;
 }
 
-.consulting-section ul li::before {
+.conteudo-choose ul li::before {
     content: "✓";
     position: absolute;
     left: 0;
@@ -321,6 +337,11 @@ img {
     font-weight: bold;
 }
 
+.learn-more:hover {
+    text-decoration: underline 2px #0360D9;
+    text-underline-offset: 6px;
+}
+
 .appointment-section {
     display: flex;
     align-items: center;
@@ -330,7 +351,7 @@ img {
     gap: 60px;
 }
 
-.appointment-section > div:first-child {
+.depoimentos-esquerda {
     flex: 1;
     max-width: 450px;
 }
@@ -343,19 +364,17 @@ img {
 .appointment-section p {
     color: #666666;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.appointment-section > div:first-child img {
-    margin-bottom: 10px;
+.grupo-reviews {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.appointment-section p span {
-    font-weight: bold;
-    color: #111111;
-}
-
-.appointment-section > div:last-child {
+.card-depoimento {
     flex: 1;
     background-color: #FFFFFF;
     padding: 40px;
@@ -364,39 +383,43 @@ img {
     max-width: 550px;
 }
 
-.appointment-section > div:last-child img:first-of-type {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.appointment-section > div:last-child p:first-of-type {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-}
-
-.appointment-section > div:last-child p:nth-of-type(2) {
-    color: #999999;
-    font-size: 14px;
+.topo-depoimento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
-.appointment-section .filled-star, 
-.appointment-section img[alt*="star"],
-.appointment-section img[alt*="Estrela"] {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    margin-right: 4px;
+.topo-depoimento img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.appointment-section > div:last-child p:last-of-type {
+.topo-depoimento p:first-of-type {
+    font-size: 18px;
+    color: #111111;
+}
+
+.topo-depoimento p:last-of-type {
+    color: #999999;
+    font-size: 14px;
+}
+
+.estrelas {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.estrelas img {
+    width: 18px;
+    height: 18px;
+}
+
+.card-depoimento > p {
     color: #666666;
     line-height: 1.7;
-    margin-top: 15px;
 }
 
 .quality-health {
@@ -405,35 +428,38 @@ img {
     justify-content: space-between;
     padding: 80px 8%;
     gap: 60px;
-    flex-wrap: wrap; 
+}
+
+.conteudo-qualidade {
+    flex: 1;
+    max-width: 550px;
 }
 
 .quality-health h1 {
-    font-size: 40px;
-    margin-bottom: 25px;
-    flex-basis: 100%; 
-}
-
-.quality-health p,
-.quality-health .learn-more {
-    flex-basis: 45%; 
-    clear: left; 
+    font-size: 48px;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 30px;
 }
 
 .quality-health p {
     color: #666666;
-    margin-bottom: 20px;
+    font-size: 16px;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.quality-health div {
+.imagem-qualidade {
     flex: 1;
-    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.quality-health div img {
+.imagem-qualidade img {
     border-radius: 24px;
     width: 100%;
+    max-width: 570px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -564,7 +590,7 @@ img {
 
 @media (max-width: 992px) {
     .section-inicial,
-    .consulting-section,
+    .why-choose-us, 
     .appointment-section,
     .quality-health {
         flex-direction: column;
@@ -572,14 +598,18 @@ img {
     }
     
     .img-medico,
-    .consulting-section div,
-    .appointment-section div,
-    .quality-health div {
+    .img-cirurgiao, 
+    .imagem-qualidade,
+    .appointment-section div {
         justify-content: center;
         margin-top: 40px;
     }
 
-    .consulting-section ul li {
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-choose ul li {
         text-align: left;
     }
 
@@ -601,3 +631,4 @@ img {
         width: 80%;
     }
 }
+
