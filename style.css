@@ -9,13 +9,28 @@ span {
     color: #0360D9;
 }
 
+body {
+    background-color: #FFFFFF;
+    color: #111111;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 8%;
-    background-color:#CCD5F3;
-
+    background-color: #CCD5F3;
 }
 
 .logo {
@@ -24,23 +39,25 @@ span {
     color: #333333;
 }
 
-.nav {
+.botoes-navegacao {
     display: flex;
     gap: 25px;
 }
 
-.nav a {
+.botoes-navegacao a {
     text-decoration: none;
     color: #666666;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.nav a:hover {
+.botoes-navegacao a:hover {
     color: #0360D9;
+    text-decoration: underline 2px #0360D9;
+    text-underline-offset: 6px;
 }
 
-.header-botao {
+.botoes-login-signup {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -97,7 +114,7 @@ span {
     background-color: #FFFFFF;
     padding: 10px 14px 10px 30px;
     border-radius: 60px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 35px #0000000d;
     max-width: 750px;
 }
 
@@ -134,8 +151,6 @@ span {
     color: #333333;
     padding: 10px 25px 10px 0;
     cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
 
@@ -174,4 +189,415 @@ span {
     height: 550px;
     width: 500px;
     object-fit: cover;
+}
+
+.consulting-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+.consulting-section > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    flex: 1;
+}
+
+.consulting-section h2 {
+    grid-column: 1 / -1;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.consulting-section article {
+    background-color: #FFFFFF;
+    padding: 40px 25px;
+    border-radius: 15px;
+    border: 1px solid #E2E8F0;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.consulting-section article img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+.consulting-section article h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.consulting-section article p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.consulting-section article:nth-of-type(2) {
+    background-color: #0360D9;
+    color: #FFFFFF;
+    border-color: #0360D9;
+    box-shadow: 0 15px 30px #0360d933;
+}
+
+.consulting-section article:nth-of-type(2) h3 span {
+    color: #FFFFFF;
+}
+
+.consulting-section article:nth-of-type(2) p {
+    color: #E2E8F0;
+}
+
+.faixa-estatisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0360D9;
+    color: #FFFFFF;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.item-estatistica h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.item-estatistica p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.item-estatistica.divisor {
+    border-left: 2px solid #ffffff4d;
+    border-right: 2px solid #ffffff4d;
+    padding: 0 60px;
+}
+
+.consulting-section > div:last-child {
+    flex: 1;
+    max-width: 550px;
+}
+
+.consulting-section > div:last-child h2 {
+    text-align: left;
+    font-size: 36px;
+    margin: 25px 0;
+}
+
+.consulting-section ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.consulting-section ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.consulting-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0360D9;
+    font-weight: bold;
+}
+
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #0360D9;
+    font-weight: bold;
+}
+
+.appointment-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background-color: #EEF4FF;
+    gap: 60px;
+}
+
+.appointment-section > div:first-child {
+    flex: 1;
+    max-width: 450px;
+}
+
+.appointment-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.appointment-section p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.appointment-section > div:first-child img {
+    margin-bottom: 10px;
+}
+
+.appointment-section p span {
+    font-weight: bold;
+    color: #111111;
+}
+
+.appointment-section > div:last-child {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #00000005;
+    max-width: 550px;
+}
+
+.appointment-section > div:last-child img:first-of-type {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.appointment-section > div:last-child p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.appointment-section > div:last-child p:nth-of-type(2) {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.appointment-section .filled-star, 
+.appointment-section img[alt*="star"],
+.appointment-section img[alt*="Estrela"] {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.appointment-section > div:last-child p:last-of-type {
+    color: #666666;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.quality-health {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 60px;
+    flex-wrap: wrap; 
+}
+
+.quality-health h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    flex-basis: 100%; 
+}
+
+.quality-health p,
+.quality-health .learn-more {
+    flex-basis: 45%; 
+    clear: left; 
+}
+
+.quality-health p {
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.quality-health div {
+    flex: 1;
+    max-width: 50%;
+}
+
+.quality-health div img {
+    border-radius: 24px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.secao-newsletter {
+    background-color: #0360D9;
+    margin: 40px 8% 80px 8%;
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.titulo-newsletter {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.formulario-newsletter {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 8px 10px 8px 25px;
+    border-radius: 100px;
+}
+
+.entrada-newsletter {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333333;
+}
+
+.botao-newsletter {
+    background-color: #0360D9;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botao-newsletter:hover {
+    background-color: #024bb1;
+}
+
+.botao-newsletter img {
+    filter: brightness(0) invert(1);
+    width: 16px;
+}
+
+.rodape {
+    background-color: #0360D9;
+    color: #FFFFFF;
+    padding: 80px 8% 30px 8%;
+}
+
+.container-rodape {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.informacoes-rodape h3,
+.links-uteis h3,
+.endereco h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.informacoes-rodape p {
+    line-height: 1.6;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.links-uteis ul {
+    list-style: none;
+}
+
+.links-uteis ul li {
+    margin-bottom: 12px;
+}
+
+.links-uteis ul li a {
+    color: #FFFFFF;
+    opacity: 0.85;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.links-uteis ul li a:hover {
+    opacity: 1;
+    text-decoration: underline 2px #FFFFFF;
+    text-underline-offset: 4px;
+}
+
+.endereco img {
+    border-radius: 12px;
+    width: 240px;
+}
+
+.rodape-inferior {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #ffffff26;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+    .section-inicial,
+    .consulting-section,
+    .appointment-section,
+    .quality-health {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .img-medico,
+    .consulting-section div,
+    .appointment-section div,
+    .quality-health div {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .consulting-section ul li {
+        text-align: left;
+    }
+
+    .container-rodape {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .faixa-estatisticas {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .item-estatistica.divisor {
+        border-left: none;
+        border-top: 2px solid #ffffff33;
+        border-bottom: 2px solid #ffffff33;
+        padding: 30px 0;
+        width: 80%;
+    }
 }
