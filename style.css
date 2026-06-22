@@ -9,13 +9,28 @@ span {
     color: #0360D9;
 }
 
+body {
+    background-color: #FFFFFF;
+    color: #111111;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 8%;
-    background-color:#CCD5F3;
-
+    background-color: #CCD5F3;
 }
 
 .logo {
@@ -24,23 +39,25 @@ span {
     color: #333333;
 }
 
-.nav {
+.botoes-navegacao {
     display: flex;
     gap: 25px;
 }
 
-.nav a {
+.botoes-navegacao a {
     text-decoration: none;
     color: #666666;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.nav a:hover {
+.botoes-navegacao a:hover {
     color: #0360D9;
+    text-decoration: underline 2px #0360D9;
+    text-underline-offset: 6px;
 }
 
-.header-botao {
+.botoes-login-signup {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -50,6 +67,9 @@ span {
     text-decoration: none;
     color: #0360D9;
     font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 22px;
+    border: 2px solid #0360D9;
 }
 
 .botao-signup {
@@ -72,6 +92,7 @@ span {
     justify-content: space-between;
     padding: 60px 8%;
     background: linear-gradient(180deg, #CCD5F3 0%, #FFFFFF 100%);
+    gap: 40px;
 }
 
 .conteudo-inicial {
@@ -97,7 +118,7 @@ span {
     background-color: #FFFFFF;
     padding: 10px 14px 10px 30px;
     border-radius: 60px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 35px #0000000d;
     max-width: 750px;
 }
 
@@ -134,8 +155,6 @@ span {
     color: #333333;
     padding: 10px 25px 10px 0;
     cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
 
